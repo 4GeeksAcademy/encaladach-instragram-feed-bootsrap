@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Instagram Feed</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-0">
+            <div class="container-fluid">
+                <div class="col-3 offset-1">
+                    <i class="fa fa-instagram col-1" aria-hidden="true"></i>
+                    <a class="navbar-brand col-2" href="#">Instagram</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="col-3 offset-8">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <a class="btn btn-success text-white" data-toggle="modal"
+                                        data-target="#modalnewpost">Create new post</a>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-cog pt-3" aria-hidden="true"></i>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+                    <div class="modal fade" id="modalnewpost" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <div class="row modal-body">
+                                        <textarea class="w-100"></textarea>
+                                    </div>
+                                    <div class="row">
+                                        <button class="btn btn-light border-secondary mx-1 px-2 py-1 ml-3"><i class="fa fa-camera" aria-hidden="true"></i></button>
+                                        <button class="btn btn-light border-secondary px-2 py-0 pt-1"><h5><i class="fa fa-map-marker" aria-hidden="true"></i></h5></button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-success">Publicar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active bg-light text-secondary" id="home-tab" data-toggle="tab"
+                            href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-th" aria-hidden="true"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-light text-secondary" id="post-tab" data-toggle="tab"
+                            href="#post" role="tab" aria-controls="post" aria-selected="false"><i class="fa fa-square" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                        <img class="col-4 p-0" src="https://cdn.pixabay.com/photo/2016/11/18/19/55/guitar-1836655_1280.jpg">
+                        <img class="col-4 pr-1 pl-1" src="https://cdn.pixabay.com/photo/2017/11/15/09/28/music-player-2951399_1280.jpg">
+                        <img class="col-4 p-0" src="https://cdn.pixabay.com/photo/2017/10/25/03/40/guitar-2886886_1280.jpg">
+                    </div>
+                    <div class="row">
+                        <img class="col-4 p-0 pt-1 pb-1" src="https://cdn.pixabay.com/photo/2018/11/03/06/37/instrument-3791494_1280.jpg">
+                        <img class="col-4 pr-1 pl-1 pt-1 pb-1" src="https://cdn.pixabay.com/photo/2017/10/30/16/38/music-2902891_1280.jpg">
+                        <img class="col-4 p-0 pt-1 pb-1" src="https://cdn.pixabay.com/photo/2015/10/26/13/45/microphone-1007154_1280.jpg">
+                    </div>
+                    <div class="row">
+                        <img class="col-4 p-0" src="https://cdn.pixabay.com/photo/2016/03/23/20/15/music-sheet-1275583_1280.png">
+                        <img class="col-4 pr-1 pl-1" src="https://cdn.pixabay.com/photo/2017/10/27/20/26/pink-2895452_1280.jpg">
+                        <img class="col-4 p-0" src="https://cdn.pixabay.com/photo/2021/01/28/19/37/vinyl-record-5958903_1280.jpg">
+                    </div>
+                </div>
+
+                <div class="tab-pane bg-secondary" id="post" role="tabpanel" aria-labelledby="post-tab">
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="row p-2 pl-3">
+                            <h4>My first picture</h4>
+                            <h5 class="text-secondary pr-0 offset-8">12/14</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>23 Likes</strong></h6>
+                            <h6>This is an example of the firs picture of my projecto with Bootstrap</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                            <i class="fa fa-ellipsis-v text-secondary"></i>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="row p-2 pl-3">
+                            <h4>My first picture</h4>
+                            <h5 class="text-secondary pr-0 offset-8">12/14</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>23 Likes</strong></h6>
+                            <h6>This is an example of the firs picture of my projecto with Bootstrap</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                            <i class="fa fa-ellipsis-v text-secondary"></i>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="row p-2 pl-3">
+                            <h4>My first picture</h4>
+                            <h5 class="text-secondary pr-0 offset-8">12/14</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>23 Likes</strong></h6>
+                            <h6>This is an example of the firs picture of my projecto with Bootstrap</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                            <i class="fa fa-ellipsis-v text-secondary"></i>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="row p-2 pl-3">
+                            <h4>My first picture</h4>
+                            <h5 class="text-secondary pr-0 offset-8">12/14</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>23 Likes</strong></h6>
+                            <h6>This is an example of the firs picture of my projecto with Bootstrap</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                            <i class="fa fa-ellipsis-v text-secondary"></i>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="row p-2 pl-3">
+                            <h4>My first picture</h4>
+                            <h5 class="text-secondary pr-0 offset-8">12/14</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>23 Likes</strong></h6>
+                            <h6>This is an example of the firs picture of my projecto with Bootstrap</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                            <i class="fa fa-ellipsis-v text-secondary"></i>
+                        </div>
+                    </div>
+
+                    <div class="container mt-5 col-6 bg-white rounded">
+                        <div class="row p-2 pl-3">
+                            <h4>My first picture</h4>
+                            <h5 class="text-secondary pr-0 offset-8">12/14</h5>
+                        </div>
+                        <div class="row">
+                            <img src="https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-fluid">
+                        </div>
+                        <div class="row p-3">
+                            <h6><strong>23 Likes</strong></h6>
+                            <h6>This is an example of the firs picture of my projecto with Bootstrap</h6>
+                        </div>
+                        <div class="row p-3">
+                            <i class="fa fa-heart-o text-secondary"></i>
+                            <form>
+                                <input type="text" class="border-0 col-10" placeholder="Comment...">
+                            </form>
+                            <i class="fa fa-ellipsis-v text-secondary"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            
+
+
+
+
+
